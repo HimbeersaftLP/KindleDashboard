@@ -10,9 +10,9 @@ Soon™
 
 ## How to use
 ### What you need
-* A [jailbroken Kindle](https://www.mobileread.com/forums/showthread.php?t=320564) ([Disclaimer](#Kindle Disclaimer))(note that it's very hard/impossible to jailbreak modern Kindles, I recommend going for a used Kindle Touch) with [landscape-patched WebLaunch](https://github.com/HimbeersaftLP/WebLaunch) (or any landscape device with a web browser)
+* A [jailbroken Kindle](https://www.mobileread.com/forums/showthread.php?t=320564) ([Disclaimer](#kindle-disclaimer))(note that it's very hard/impossible to jailbreak modern Kindles, I recommend going for a used Kindle Touch) with [landscape-patched WebLaunch](https://github.com/HimbeersaftLP/WebLaunch) (or any landscape device with a web browser)
 * Some knowledge of JavaScript
-* [Icon files](#Icons)
+* [Icon files](#icons)
 * Means of providing weather data. I have included code that can parse [DarkSky](https://darksky.net/dev)'s API response, however you will need to set up a proxy for that (note that the Kindle Browser doesn't support CORS)
 * A simple web server to serve this page to your device
 ### WebLaunch configuration
