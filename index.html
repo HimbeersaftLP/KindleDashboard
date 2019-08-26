@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>KindlePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table class="masterGrid">
+    <tr>
+        <td class="dateCol">
+            <p class="infoText" id="infoText">gohome: offline</p>
+            <p class="time" id="clock">13:37</p>
+            <p class="date" id="cal">32.13.2042</p>
+        </td>
+        <td class="weatherCol">
+            <table>
+                <tr class="weatherSubRow">
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="weatherInfoIconBigContainer">
+                                    <img src="icons/weather/question-circle.png"
+                                         class="weatherInfoIconBig"
+                                         id="weatherInfoIconBig"/>
+                                </td>
+                                <td>
+                                    <table class="weatherInfoTable">
+                                        <tr class="wind">
+                                            <td class="weatherInfoIconContainer">
+                                                <img src="icons/windsock.png"
+                                                     class="weatherInfoIcon"/>
+                                            </td>
+                                            <td class="weatherInfoTextContainer">
+                                                <p class="weatherInfoText" id="weatherInfoWind"></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="humidity">
+                                            <td class="weatherInfoIconContainer">
+                                                <img src="icons/humidity.png"
+                                                     class="weatherInfoIcon"/>
+                                            </td>
+                                            <td class="weatherInfoTextContainer">
+                                                <p class="weatherInfoText" id="weatherInfoHumidity"></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="precipitation">
+                                            <td class="weatherInfoIconContainer">
+                                                <img src="icons/raindrops.png"
+                                                     class="weatherInfoIcon"/>
+                                            </td>
+                                            <td class="weatherInfoTextContainer">
+                                                <p class="weatherInfoText" id="weatherInfoPrecipitation"></p>
+                                            </td>
+                                        </tr>
+                                        <tr class="pressure">
+                                            <td class="weatherInfoIconContainer">
+                                                <img src="icons/barometer.png"
+                                                     class="weatherInfoIcon"/>
+                                            </td>
+                                            <td class="weatherInfoTextContainer">
+                                                <p class="weatherInfoText" id="weatherInfoPressure"></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="temperatureRow">
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="temperature">
+                                    <img src="icons/thermometers/thermometer-half.png" class="temperatureIcon"/>
+                                    <p class="temperatureText" id="temperatureTextCurrent"></p>
+                                </td>
+                                <td class="temperature">
+                                    <img src="icons/thermometers/temperature-frigid.png"
+                                         class="temperatureIcon"/>
+                                    <p class="temperatureText" id="temperatureTextMin"></p>
+                                </td>
+                                <td class="temperature">
+                                    <img src="icons/thermometers/temperature-hot.png" class="temperatureIcon"/>
+                                    <p class="temperatureText" id="temperatureTextMax"></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table class="masterGrid masterGridBottom">
+    <tr id="columnContainer"></tr>
+</table>
+<script src="utility.js"></script>
+<script src="ui.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

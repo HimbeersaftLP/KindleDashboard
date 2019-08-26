@@ -1,0 +1,171 @@
+html,
+body {
+    margin: 0;
+    width: 934px;
+    height: 700px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+/* Main table layout */
+
+.masterGrid,
+table,
+tbody,
+tr,
+td {
+    width: 100%;
+}
+
+.masterGrid {
+    /* Fill page */
+    height: 60%;
+}
+
+.masterGridBottom {
+    height: 40%;
+}
+
+.dateCol {
+    /* Split layout between date and weather */
+    width: 40%;
+}
+
+/* Date text and border */
+
+.dateCol p {
+    text-align: center;
+}
+
+.infoText {
+    font-size: 1rem;
+}
+
+.time {
+    font-size: 5rem;
+    border-bottom: solid black 0.125rem;
+}
+
+.date {
+    font-size: 2.5rem;
+}
+
+/* Weather/Temperature table layout */
+
+.weatherSubRow,
+.temperatureRow {
+    /* Split weather between weatherSub and temperature */
+    height: 50%;
+}
+
+.weatherInfoIconBigContainer {
+    /* Center main weather icon */
+    text-align: center;
+    /* Takes up third the weatherSub table */
+    width: 30%;
+}
+
+.weatherInfoIconBig {
+    width: 100%;
+}
+
+.weatherInfoTable > tbody > tr {
+    /* Split weather info in 4 rows */
+    height: 25%;
+}
+
+.weatherInfoIconContainer {
+    width: 2rem;
+}
+
+.temperature {
+    /* Split temperature in 3 columns */
+    width: 33%;
+    text-align: center;
+}
+
+/* Weather/Temperature icon and text style */
+
+.weatherInfoIcon,
+.temperatureIcon {
+    height: 1.5rem;
+}
+
+.weatherInfoText,
+.temperatureText {
+    /* To bring the text besides the image */
+    display: inline-block;
+    /* Vertically center text with icon */
+    line-height: 1.5rem;
+    vertical-align: top;
+}
+
+/* Blocks */
+
+.block {
+    width: 50%;
+}
+
+.block.blockElements {
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* Buttons */
+
+.btn {
+    height: 2rem;
+    padding: .2rem;
+    background-color: white;
+    /*border: solid 0.1875rem black;*/
+    border: solid 0.2rem black;
+    /*border-radius: 0.3125rem;*/
+    border-radius: 0.3rem;
+    margin: 0 .2rem 0 .2rem;
+}
+
+.btn:focus {
+    outline: none;
+    border-color: darkgray;
+}
+
+.btn.btnToggle {
+    width: 3rem;
+    color: transparent; /* don't even ask */
+    background-image: linear-gradient(90deg, black 50%, white 50%);
+    /* Kindle compatible gradient powered by https://autoprefixer.github.io/ */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, black), color-stop(50%, white));
+    background-size: 90% 77%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn.btnToggle[data-toggle-value="true"] {
+    background-image: linear-gradient(90deg, lightgreen 50%, black 50%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, lightgreen), color-stop(50%, black));
+}
+
+/* Alternative toggle style */
+/*.btn.btnToggle:after {*/
+/*    display: block;*/
+/*    width: 1.2rem;*/
+/*    height: 1.6rem;*/
+/*    position: relative;*/
+/*    left: -0.25rem;*/
+/*    top: -1.15rem;*/
+/*    !*transition: left .2s;*!*/
+/*    content: "0";*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*    line-height: 1.6rem;*/
+/*}*/
+
+/*.btn.btnToggle[data-toggle-value="true"]:after {*/
+/*    left: 1.2rem;*/
+/*    content: "1";*/
+/*    background-color: green;*/
+/*}*/
