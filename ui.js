@@ -117,6 +117,21 @@ var ui = {};
         }
         return btn;
     };
+    
+    ui.sliders = {};
+    
+    ui.sliders.createSlider = function(name, callback, min, max, defaultValue, eventType) {
+      if (!eventType) eventType = "change";
+      var slider = document.createElement("input");
+      slider.id = "slider_" + name;
+      slider.type = "range";
+      slider.min = min;
+      slider.max = max;
+      slider.value = defaultValue;
+      slider.className = "slider";
+      slider.addEventListener(eventType, callback);
+      return slider;
+    }
 
     ui.blocks = {};
     ui.blocks.columns = [];
