@@ -191,13 +191,15 @@ td {
     border-color: darkgray;
 }
 
-.slider::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 2rem;
+.slider {
+    width: 86.5%;
+    height: 1.2rem;
     padding: .2rem;
+    margin-right: 1rem;
     border: solid 0.2rem black;
     border-radius: 0.3rem;
     cursor: pointer;
+    top: 0;
 }
 
 .slider::-moz-range-track {
