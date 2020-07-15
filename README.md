@@ -5,8 +5,8 @@ It provides means of displaying and controlling data in an eInk friendly way.
 
 Please excuse the excessive use of HTML tables, the Kindle Web Browser doesn't support CSS grid.
 
-## Screenshots
-Soon™
+## Screenshot
+![Screenshot](https://raw.githubusercontent.com/HimbeersaftLP/KindleDashboard/master/screenshot.png)
 
 ## How to use
 ### What you need
