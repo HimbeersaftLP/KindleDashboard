@@ -38,9 +38,11 @@ Feel free to ask me on [Discord](https://himbeer.me/discord/) or create an issue
 ## Kindle Disclaimer
 I'm not responsible if you damage, break or otherwise your Kindle.
 ## Icons
-A [PowerShell script](https://github.com/HimbeersaftLP/KindleDashboard/blob/master/icons/svgconverter.ps1) for converting SVGs to PNGs (because of bugs with SVGs in the Kindle Browser) has been provided.
+The included icons are based on [this set](https://openclipart.org/detail/311247/weather-meteorology-icons-set).
 
-The following icons are needed for the dashboard to fully function:
+A [PowerShell script](https://github.com/HimbeersaftLP/KindleDashboard/blob/master/icons/svgconverter.ps1) for converting your own SVGs to PNGs (because of bugs with SVGs in the Kindle Browser) has been provided.
+
+The following icons are needed for the dashboard to fully function (and included by default):
 ```
 icons
    │   barometer.png
