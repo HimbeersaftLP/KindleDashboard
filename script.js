@@ -39,7 +39,8 @@
     var lightSlider = ui.sliders.createSlider("sliderTest", function(e) {
       ui.info.setInfoText(e.target.value);
     }, 0, 200, 50);
-    var lightBlock = ui.blocks.createBlock("Licht", [lightToggle, lightSlider]);
+    var lightBlock = ui.blocks.createBlock("Light", [lightToggle]);
+    var lightBlock2 = ui.blocks.createBlock("", [lightSlider]);
 
     var weatherUpdateButton = ui.buttons.createButton("updateWeather", "Refresh", function () {
         updateWeather();
@@ -50,7 +51,7 @@
     kindleInfo.appendChild(document.createTextNode("Kindle: " + util.isKindle()));
     var kindleInfoBlock = ui.blocks.createBlock("Responsiveness", [kindleInfo]);
 
-    ui.blocks.addColumn([refBlock, lightBlock]);
+    ui.blocks.addColumn([refBlock, lightBlock, lightBlock2]);
     ui.blocks.addColumn([weatherBlock, kindleInfoBlock]);
 
     ui.blocks.display(); // Update / show blocks
